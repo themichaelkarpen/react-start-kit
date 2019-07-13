@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useContext, useReducer } from "react";
+import './css/app.scss';
 
-function App() {
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+import AppContext from './AppContext';
+import appReducer from './reducers/reducer';
+
+const App = () => {
+
+  const initialState = useContext(AppContext);
+  const [state, dispatch] = useReducer(appReducer, initialState);
+
+  useEffect(() => {
+    // nothing yet
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppContext.Provider value={{state, dispatch}}>
+        <Header />
+        <Main/>
+        <Footer/>
+      </AppContext.Provider>
     </div>
   );
 }
