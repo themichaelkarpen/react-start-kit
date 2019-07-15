@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Toggle = ({ darkMode, setDarkMode }) => (
+const ColorModeToggle = ({ darkMode, setDarkMode }) => (
   <div className="dark-mode-toggle">
     <button type="button" onClick={() => setDarkMode(false)}>
       ☀
@@ -21,4 +21,4 @@ const Toggle = ({ darkMode, setDarkMode }) => (
   </div>
 );
 
-export default Toggle;
+export default ColorModeToggle;

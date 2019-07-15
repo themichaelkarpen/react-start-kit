@@ -3,7 +3,7 @@ import AppContext from '../AppContext';
 import { Link } from 'react-router-dom'
 
 import useDarkMode from '../hooks/use-dark-mode';
-import Toggle from './Toggle';
+import ColorModeToggle from './ColorModeToggle';
 
 // The Header creates links that can be used to navigate between routes.
 const Header = () => { 
@@ -19,7 +19,7 @@ const Header = () => {
     <header id="header">
       <nav>
         <div>
-          <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ColorModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
         <div>LOGO</div>
         <div>
