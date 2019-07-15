@@ -18,15 +18,17 @@ const Header = () => {
   return (
     <header id="header">
       <nav>
-        <div>Routing App with React Hooks and Context (not redux) for Global State</div>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
-        </ul>
-        Selected Page (in Header): {state.selectedPage}
         <div>
-        <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
+        <div>LOGO</div>
+        <div>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+          </ul>
+        </div>
+        <div>Selected Page (in Header): {state.selectedPage}</div>
       </nav>
     </header>
   )

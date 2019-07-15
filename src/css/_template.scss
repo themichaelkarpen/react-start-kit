@@ -1,16 +1,27 @@
 #root, .App {
     min-height: 100vh;
+    position: relative;
 }
 #header, #footer {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--header-footer-bg);
-    color: var(--white);
+    color: var(--black);
+    background: var(--header-footer-bg-light);
+    border-top: var(--header-footer-border-light);
+    border-bottom: var(--header-footer-border-light);
+}
+#header { 
+    position: sticky; z-index: 1; top: 0;
+    nav {
+        width: 100vw;
+        @include flexible-row();
+        @include flex-justify-space-between();
+    }
 }
 #main {
-    min-height: 80vh;
+    min-height: 75vh;
     display: grid;
     grid-template-columns: minmax(2.5rem,1fr) minmax(auto,60ch) minmax(2.5rem, 1fr );
     padding-top: 4rem;

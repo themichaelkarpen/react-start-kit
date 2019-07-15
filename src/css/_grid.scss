@@ -19,3 +19,7 @@
 .flex-column {
     @include flexible-column();
 }
+
+.flex-justify-space-between {
+    justify-content: space-between;
+}

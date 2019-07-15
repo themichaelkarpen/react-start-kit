@@ -4,5 +4,12 @@ body {
 body.dark-mode {
     background-color: var(--dark-bg);
     color: var(--white);
+
+    #header, #footer {
+        color: var(--white);
+        background: var(--header-footer-bg);
+        border-top: var(--header-footer-border);
+        border-bottom: var(--header-footer-border);
+    }
 }
 

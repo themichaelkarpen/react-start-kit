@@ -12,6 +12,10 @@
     align-items: stretch;
 }
 
+@mixin flex-justify-space-between() {
+    justify-content: space-between;
+}
+
 // TRANSITIONS ---------------------------
 
 @mixin transition() {
