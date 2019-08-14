@@ -1,6 +1,5 @@
-// FLEXBOX ------------------------------------
+// Flexbox
 
-// row / columns
 @mixin flexible-row() {
     display: flex;
     align-items: center;
@@ -16,8 +15,9 @@
     justify-content: space-between;
 }
 
-// TRANSITIONS ---------------------------
+// Transitions
 
 @mixin transition() {
     transition: all 0.3s ease 0s;
 }
+

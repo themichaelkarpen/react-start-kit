@@ -1,0 +1,29 @@
+nav {
+  width: 100vw;
+  @include flexible-row();
+
+  > * {
+    margin: auto 2rem;
+  }
+  > *:first-child { margin-left: 4rem;}
+  > *:last-child { margin-right: 4rem;}
+
+  .nav__logo {
+    font-size: 1.4rem;
+  }
+
+  .nav__main {
+    @include flexible-row();
+  }
+
+  .nav__end {
+    @include flexible-row();
+
+    > * {
+      margin: auto 2rem;
+    }
+    > *:first-child { margin-left: 0;}
+    > *:last-child { margin-right: 0;}
+  }
+
+}

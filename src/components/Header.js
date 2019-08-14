@@ -18,17 +18,35 @@ const Header = () => {
   return (
     <header id="header">
       <nav>
-        <div>
-          <ColorModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        <div className="nav__logo">
+          <strong>MK</strong>
         </div>
-        <div>LOGO</div>
-        <div>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-          </ul>
+        <div className="nav__main">
+          <div><i className="fa fa-home"></i></div>
+          <div><i className="fa fa-code"></i></div>
+          <div><i className="fa fa-film"></i></div>
+          <div><i className="fa fa-cutlery"></i></div>
+          <div><i className="fa fa-book"></i></div>
+          <div><i className="fa fa-users"></i></div>
         </div>
-        <div>Selected Page (in Header): {state.selectedPage}</div>
+        <div className="nav__current-label">
+          {state.selectedPage}
+        </div>
+        <div className="flex-break-left">
+          <div class="nav__end">
+            <ul className="list-inline">
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/about'>About</Link></li>
+            </ul>
+            <div class="flex-row">
+              <div><i className="fa fa-github"></i></div>
+              <div><i className="fa fa-instagram"></i></div>
+              <div><i className="fa fa-twitter"></i></div>
+              <div><i className="fa fa-facebook-square"></i></div>
+            </div>
+            <ColorModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+          </div>
+        </div>
       </nav>
     </header>
   )

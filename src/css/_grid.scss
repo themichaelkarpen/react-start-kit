@@ -15,11 +15,62 @@
     &.space-between {
         justify-content: space-between;
     }
+    &.flex-end {
+        justify-content: flex-end;
+    }
+    
+    .break-left {
+        margin-left: auto;
+    }
+    .break-right {
+        margin-right: auto;
+    }
+    .break-top {
+        margin-top: auto;
+    }
+    .break-bottom {
+        margin-bottom: auto;
+    }
 }
 .flex-column {
     @include flexible-column();
+
+    &.space-between {
+        justify-content: space-between;
+    }
+    &.flex-end {
+        justify-content: flex-end;
+    }
+
+    .break-left {
+        margin-left: auto;
+    }
+    .break-right {
+        margin-right: auto;
+    }
+    .break-top {
+        margin-top: auto;
+    }
+    .break-bottom {
+        margin-bottom: auto;
+    }
 }
 
 .flex-justify-space-between {
     justify-content: space-between;
+}
+.flex-justify-flex-end {
+    justify-content: flex-end;
+}
+.flex-break-left {
+    margin-left: auto;
+}
+.flex-break-right {
+    margin-right: auto;
+}
+.flex-break-top {
+    margin-top: auto;
+}
+.flex-break-bottom {
+    margin-bottom: auto;
 }

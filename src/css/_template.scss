@@ -3,7 +3,6 @@
     position: relative;
 }
 #header, #footer {
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,17 +13,13 @@
 }
 #header { 
     position: sticky; z-index: 1; top: 0;
-    nav {
-        width: 100vw;
-        @include flexible-row();
-        /*
-        div::last-child {
-            margin-left: auto;
-        }*/
-    }
+}
+#footer {
+    padding: 2rem 4rem;
+    font-size: 1.4rem;
 }
 #main {
-    min-height: 75vh;
+    min-height: 65vh;
     display: grid;
     grid-template-columns: minmax(2.5rem,1fr) minmax(auto,60ch) minmax(2.5rem, 1fr );
     padding-top: 4rem;
