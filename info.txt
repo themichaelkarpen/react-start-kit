@@ -1,0 +1,6 @@
+reference to how some of this is set up found here:
+https://medium.com/swlh/creating-a-create-react-project-e0f022a229ee
+
+
+Add on React Auth (and also shows style components)
+https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71

@@ -1,7 +1,7 @@
 import axios from 'axios';
 const API_URL = "https://jsonplaceholder.typicode.com";
 
-class UserService {
+class UsersAPI {
   async getAllUsers() {
     const url = `${API_URL}/users/`;
     return axios.get(url).then(response => response.data);
@@ -13,4 +13,4 @@ class UserService {
   }
 }
 
-export default UserService;
+export default UsersAPI;

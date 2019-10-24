@@ -1,0 +1,3 @@
+check out 30second snippets and put all utilities in this folder.
+
+May want to break out by type of helpers/utilities
