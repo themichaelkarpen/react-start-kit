@@ -33,12 +33,12 @@ const Header = () => {
           {state.selectedPage}
         </div>
         <div className="flex-break-left">
-          <div class="nav__end">
+          <div className="nav__end">
             <ul className="list-inline">
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/about'>About</Link></li>
             </ul>
-            <div class="flex-row">
+            <div className="flex-row">
               <div><i className="fa fa-github"></i></div>
               <div><i className="fa fa-instagram"></i></div>
               <div><i className="fa fa-twitter"></i></div>

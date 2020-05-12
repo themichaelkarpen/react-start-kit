@@ -1,9 +1,11 @@
 import React, {useState, useContext, useEffect} from 'react'; // eslint-disable-line no-unused-vars
 import AppContext from '../AppContext';
+//import { useRouter } from '../hooks/use-router';
 
 const Home = (props) => { // note: props is needed for history push
 
   const {state, dispatch} = useContext(AppContext)
+  //const router = useRouter();
 
   useEffect(() => {
     dispatch({
@@ -12,7 +14,9 @@ const Home = (props) => { // note: props is needed for history push
     })
   }); // - if needing to compare with prev props: }, [itemsHere]);
 
-  const sampleRedirect = () => {
+  const sampleRedirect = () => { 
+    //console.log(router.pathname)
+    //router.push('/about')
     props.history.push('/about')
   }
 
